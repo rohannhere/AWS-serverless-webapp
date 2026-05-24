@@ -3,7 +3,7 @@ import boto3  # type: ignore
 
 def lambda_handler(event, context):
     # Initialize a DynamoDB resource object for the specified region
-    dynamodb = boto3.resource('dynamodb', region_name='ap-southeast-1')
+    dynamodb = boto3.resource('dynamodb', region_name='ADD_DATABASE_REGION')
 
     # Select the DynamoDB table named 'studentData'
     table = dynamodb.Table('studentData')
